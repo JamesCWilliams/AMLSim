@@ -6,8 +6,8 @@
     "base_date": "2017-01-01"
   },
   "default": {
-    "min_amount": 100,
-    "max_amount": 1000,
+    "min_amount": 50,
+    "max_amount": 10000,
     "min_balance": 50000,
     "max_balance": 100000,
     "start_step": -1,
@@ -69,7 +69,7 @@
     "diameter_log": "diameter.csv"
   },
   "graph_generator": {
-    "degree_threshold": 10,
+    "degree_threshold": 3,
     "high_risk_countries": "",
     "high_risk_business": ""
   },

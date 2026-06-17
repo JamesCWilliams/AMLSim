@@ -17,7 +17,8 @@ then
     exit
 else
     echo 'maven is installed. proceeding'
-    mvn exec:java -Dexec.mainClass=amlsim.AMLSim -Dexec.args="${CONF_JSON}"
+    mvn exec:java -Dexec.mainClass=amlsim.AMLSim -Dexec.args="${CONF_JSON}" \
+        -Dexec.jvmArgs="-XX:+UseConcMarkSweepGC -XX:ParallelGCThreads=2 -Xms${MIN_HEAP} -Xmx${MAX_HEAP}"
 fi
 
 # Cleanup temporal outputs of AMLSim
